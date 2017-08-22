@@ -1,0 +1,21 @@
+& when (@media-common = true) {
+    button,
+    a.action.primary {
+        .lib-css(border-radius, @button__border-radius);
+        //color: red !important;
+    }
+
+    button {
+        &:active {
+            .lib-css(box-shadow, @button__shadow);
+        }
+    }
+
+    a.action.primary {
+        .lib-link-as-button();
+    }
+
+    .action.primary {
+        .lib-button-primary();
+    }
+}
